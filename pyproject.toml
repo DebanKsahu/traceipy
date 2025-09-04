@@ -1,0 +1,11 @@
+[project]
+name = "traceipy"
+version = "0.1.0"
+description = "Thinking About The Description"
+authors = [{ name = "Deban Kumar Sahu"}]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/DebanKsahu/traceipy"
