@@ -5,7 +5,20 @@ description = "Thinking About The Description"
 authors = [{ name = "Deban Kumar Sahu"}]
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "yappi>=1.6.10",
+]
 
 [project.urls]
 Repository = "https://github.com/DebanKsahu/traceipy"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.12.11",
+]
+
+[tool.uv.sources]
+traceipy = { workspace = true }
+
+[tool.ruff]
+lint.select = ["I", "F401"]
