@@ -23,10 +23,11 @@ async def slow_async():
 @traceipy_decorator(root_class=root_class)
 async def main():
     x = await slow_async()
-    y = cpu_bound(10000)
+    y = cpu_bound(100000000)
     return x + y
 
 
 if __name__ == "__main__":
     result = asyncio.run(main())
-    print("Final result:", result)
+
+

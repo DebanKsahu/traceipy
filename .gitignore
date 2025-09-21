@@ -11,3 +11,9 @@ wheels/
 
 # Python version files
 .python-version
+
+# Ruff generated files
+.ruff_cache
+
+# Test files
+tests/
